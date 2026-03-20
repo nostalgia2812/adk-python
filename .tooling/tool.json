@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "adk-python",
+  "name": "Agent Development Kit (Python)",
+  "hub_manifest": "https://github.com/nostalgia2812/.github/blob/claude/tooling-filing-system-uG7Gs/.tooling/tool_manifest.json",
+  "category": "development-frameworks",
+  "subcategory": "ai-agent-development",
+  "description": "Google's Agent Development Kit for building AI agents in Python",
+  "language": "Python",
+  "license": "Apache-2.0",
+  "maintainer": "nostalgia2812",
+  "status": "active",
+  "priority": "medium",
+  "install": {
+    "pip": "pip install google-adk"
+  },
+  "health_check": "python3 -c 'import google.adk; print(\"ADK installed\")'",
+  "python_min_version": "3.9",
+  "config_files": ["pyproject.toml"],
+  "cloud_integrations": ["google-cloud", "vertex-ai", "gemini"],
+  "ci_integration": ".github/workflows/integration-tests.yml",
+  "documentation": "https://github.com/nostalgia2812/.github/blob/claude/tooling-filing-system-uG7Gs/TOOLS_INDEX.md#agent-development-kit-python",
+  "tags": ["ai", "agents", "llm", "google", "python", "development", "medium"],
+  "use_cases": [
+    "Building AI-powered security agents",
+    "Automating security assessment workflows",
+    "Multi-agent security orchestration",
+    "Intelligent IOC analysis"
+  ],
+  "last_updated": "2026-03-20"
+}
